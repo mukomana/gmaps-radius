@@ -110,7 +110,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         clickable: true,
         draggable: false,
         editable: false,
-        fillOpacity: 0.6,
+        fillOpacity: 0.27,
         fillColor: '#00ff00',
         map: map,
         radius: radius,
