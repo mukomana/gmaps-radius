@@ -116,7 +116,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         radius: radius,
         strokeColor: '#004de8',
         strokeOpacity: 0.62,
-        strokeWeight: 1
+        strokeWeight: 2
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
       return google.maps.event.addListener(circle, 'click', circleDrawHandler);
