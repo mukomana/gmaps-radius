@@ -44,7 +44,6 @@
         clickable: true,
         draggable: false,
         editable: false,
-        fillColor: '#004de8',
         fillOpacity: 0.27,
         map: map,
         radius: radius,
