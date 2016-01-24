@@ -111,7 +111,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         draggable: false,
         editable: false,
         fillOpacity: 0.6,
-        fillColor: #ffffff,
+        fillColor: '#004de8',
         map: map,
         radius: radius,
         strokeColor: '#004de8',
