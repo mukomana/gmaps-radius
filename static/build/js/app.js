@@ -71,7 +71,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     
     map = new google.maps.Map($('#map')[0], {
       zoom: 10,
-      center: new google.maps.LatLng(51.500358, -0.125506),26°32′S 29°59′E
+      center: new google.maps.LatLng(-26.514820023728774,30.00091552734375),
       mapType: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
       mapTypeControl: true,
@@ -87,7 +87,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     
     locations = [
       ['Ermelo','-26.514820023728774','30.00091552734375',1,1]
-      ['Amsterdam','-26.47057302237508','29.49005126953125',1,2]
+      ['Bethal','-26.47057302237508','29.49005126953125',1,2]
       ];
 
     for (i = 0; i < locations.length; i++) {
