@@ -66,7 +66,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 
 (function() {
   $(function() {
-    var circleDrawHandler, circles, earthRadii, map, polygonDestructionHandler, searchBox, searchInput, marker, i, pinImage, locations;
+    var circleDrawHandler, circles, earthRadii, map, polygonDestructionHandler, searchBox, searchInput, marker, i, pinImage, locations, markerCluster, markers;
     circles = [];
     
     map = new google.maps.Map($('#map')[0], {
@@ -85,18 +85,22 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       }
     });
     
+    
     locations = [
       ['Amersfoort','27°00′28″S','29°52′16″E',1,1]
       ['Amsterdam','26.617°S','30.667°E',1,2]
       ];
 
+
     for (i = 0; i < locations.length; i++) {
-      
-		marker = new google.maps.Marker({
-		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-		map: map
-		});
+    	marker = new google.maps.Marker({
+	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	});
+	
+	markers.push(marker);
     };
+    
+    markerCluster = new MarkerClusterer(map,markers);
     
     earthRadii = {
       mi: 3963.1676,
