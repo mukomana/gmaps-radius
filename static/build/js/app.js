@@ -105,6 +105,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
       });
+    };
     earthRadii = {
       mi: 3963.1676,
       km: 6378.1,
