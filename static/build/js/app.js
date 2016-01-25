@@ -93,6 +93,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 
     for (i = 0; i < locations.length; i++) {
       var pinImage;
+      
       if (locations[i][4]<1){
           pinImage = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/icons/green-dot.png");
         }else if (locations[i][4]<2){
