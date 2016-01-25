@@ -71,7 +71,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     
     map = new google.maps.Map($('#map')[0], {
       zoom: 10,
-      center: new google.maps.LatLng(51.500358, -0.125506),
+      center: new google.maps.LatLng(51.500358, -0.125506),26°32′S 29°59′E
       mapType: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
       mapTypeControl: true,
@@ -85,12 +85,10 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       }
     });
     
-    
     locations = [
-      ['Amersfoort','27°00′28″S','29°52′16″E',1,1]
-      ['Amsterdam','26.617°S','30.667°E',1,2]
+      ['Ermelo','-26.514820023728774','30.00091552734375',1,1]
+      ['Amsterdam','-26.47057302237508','29.49005126953125',1,2]
       ];
-
 
     for (i = 0; i < locations.length; i++) {
     	marker = new google.maps.Marker({
