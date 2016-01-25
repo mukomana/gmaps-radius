@@ -66,7 +66,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 
 (function() {
   $(function() {
-    var circleDrawHandler, circles, earthRadii, map, polygonDestructionHandler, searchBox, searchInput;
+    var circleDrawHandler, circles, earthRadii, map, polygonDestructionHandler, searchBox, searchInput, marker, i, pinImage;
     circles = [];
     
     map = new google.maps.Map($('#map')[0], {
@@ -89,11 +89,8 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       ['Amersfoort','27°00′28″S','29°52′16″E',1,1]
       ['Amsterdam','26.617°S','30.667°E',1,2]
       ];
-    var marker, i;
 
     for (i = 0; i < locations.length; i++) {
-      var pinImage;
-      
       if (locations[i][4]<1){
         pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
       }else if (locations[i][4]<2){
@@ -103,11 +100,11 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       }else (locations[i][4]<4){
         pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
       };
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map,
-        icon: pinImage
-      });
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map,
+      icon: pinImage
+    });
     };
     earthRadii = {
       mi: 3963.1676,
