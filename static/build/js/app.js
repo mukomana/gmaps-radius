@@ -95,14 +95,12 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     for (i = 0; i < locations.length; i++) {
     	marker = new google.maps.Marker({
 	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	map:map,
+	title: locations[i][4]
 	});
-	
-	markers.push(marker);
     };
     
-    markerCluster = new MarkerClusterer(map,markers);
-    
-    earthRadii = {
+   earthRadii = {
       mi: 3963.1676,
       km: 6378.1,
       ft: 20925524.9,
