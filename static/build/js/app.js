@@ -93,7 +93,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
 
     for (i = 0; i < locations.length; i++) {  
       marker = new google.maps.Marker({
-        if (locations[i][4]<1{
+        if (locations[i][4]<1){
           icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
         }else if (locations[i][4]<2){
           icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
