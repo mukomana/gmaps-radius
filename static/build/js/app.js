@@ -68,6 +68,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
   $(function() {
     var circleDrawHandler, circles, earthRadii, map, polygonDestructionHandler, searchBox, searchInput;
     circles = [];
+    
     map = new google.maps.Map($('#map')[0], {
       zoom: 10,
       center: new google.maps.LatLng(51.500358, -0.125506),
@@ -83,6 +84,27 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         position: google.maps.ControlPosition.TOP_RIGHT
       }
     });
+    
+    var locations = [
+      ['Amersfoort','27°00′28″S','29°52′16″E',1,1]
+      ['Amsterdam','26.617°S','30.667°E',1,2]
+      ]
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        if (locations[i][4]==0{
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        }else if (locations[i][4]==1){
+          icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+        }}else if (locations[i][4]==2){
+          icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
+        }}else if (locations[i][4]==3){
+          icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+        }
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
     earthRadii = {
       mi: 3963.1676,
       km: 6378.1,
