@@ -95,14 +95,14 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       var pinImage;
       
       if (locations[i][4]<1){
-          pinImage = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/icons/green-dot.png");
-        }else if (locations[i][4]<2){
-          pinImage = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/icons/yellow-dot.png");
-        }else if (locations[i][4]<3){
-          pinImage = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/icons/orange-dot.png");
-        }else (locations[i][4]<4){
-          pinImage = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/icons/red-dot.png");
-        };
+        pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+      }else if (locations[i][4]<2){
+        pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');
+      }else if (locations[i][4]<3){
+        pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/orange-dot.png');
+      }else (locations[i][4]<4){
+        pinImage = new google.maps.MarkerImage('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+      };
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
