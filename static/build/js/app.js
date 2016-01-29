@@ -86,10 +86,12 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     });
     
     var flightPlanCoordinates = [
-    {lat: -26.475, lng: 30.284},
-    {lat: -26.472, lng: 30.149},
-    {lat: -26.484, lng: 29.999},
-    {lat: -26.569, lng: 30.797}
+    	{lat: -26.44435859, lng: 29.6697794},
+    	{lat: -26.4294017, lng: 29.7102435},
+    	{lat: -26.472, lng: 30.149},
+    	{lat: -26.475, lng: 30.284},
+    	{lat: -26.484, lng: 29.999},
+    	{lat: -26.569, lng: 30.797}
   ];
   
   var flightPath = new google.maps.Polyline({
