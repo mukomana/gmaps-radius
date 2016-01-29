@@ -86,11 +86,11 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     });
     
     var flightPlanCoordinates = [
-    	{lat: -26.44435859, lng: 29.6697794},
-    	{lat: -26.4294017, lng: 29.7102435},
-    	{lat: -26.472, lng: 30.149},
-    	{lat: -26.475, lng: 30.284},
-    	{lat: -26.484, lng: 29.999},
+    	{lat: -26.44435859, lng: 29.6697794},//Davel
+    	{lat: -26.4294017, lng: 29.7102435}, //Mooovlei
+    	{lat: -26.4574952, lng: 30.1703113},//Burgerspan
+    	{lat: -26.47547151, lng: 30.2605913},//koolbank
+    	{lat: -26.483606, lng: 30.1170495},
     	{lat: -26.569, lng: 30.797}
   ];
   
