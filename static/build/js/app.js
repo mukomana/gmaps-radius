@@ -85,6 +85,23 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       }
     });
     
+    var flightPlanCoordinates = [
+    {lat: -26.475, lng: 30.284},
+    {lat: -26.472, lng: 30.149},
+    {lat: -26.484, lng: 29.999},
+    {lat: -26.569, lng: 30.797}
+  ];
+  var flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+
+  flightPath.setMap(map);
+}
+    
     locations = [
       ['Ermelo',-26.514820023728774,30.00091552734375,1,1]
       ['Bethal',-26.47057302237508,29.49005126953125,1,2]
