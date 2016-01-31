@@ -89,9 +89,10 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     	{lat: -26.44435859, lng: 29.6697794},//Davel
     	{lat: -26.4294017, lng: 29.7102435}, //Mooovlei
     	{lat: -26.5104804, lng: 29.9120344},//Ermelo
+    	{lat: -26.483606, lng: 30.1170495},//Meppel
     	{lat: -26.4574952, lng: 30.1703113},//Burgerspan
-    	{lat: -26.47547151, lng: 30.2605913},//koolbank
-    	{lat: -26.483606, lng: 30.1170495},
+    	{lat: -26.5257563, lng: 30.0011125},//koolbank
+    	{lat: -26.3922661, lng: 30.4301722},//Lothair
     	{lat: -26.569, lng: 30.797}
   ];
   
