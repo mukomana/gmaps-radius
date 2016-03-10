@@ -136,11 +136,24 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       return this.setMap(null);
     };
     circleDrawHandler = function(e) {
-      var circle, radius, select, unitKey;
+      var circle, radius, select, unitKey, lineColor;
       select = $('#unitSelector');
       unitKey = $('option', select).eq(select[0].selectedIndex).val();
       radius = parseFloat(document.getElementById('radiusInput').value);
+      if(radius <= 30){
+      		lineColor = '#00FF00'
+      }
+       if(radius <= 60){
+      		lineColor = '#FFFF00'
+      }
+       if(radius <= 90){
+      		lineColor = '#FFA500'
+      }
+       if(radius <= 120){
+      		lineColor = '#FF0000'
+      }
       radius = (radius / earthRadii[unitKey]) * earthRadii['mt'];
+      
       circle = new google.maps.Circle({
         center: e.latLng,
         clickable: true,
@@ -150,7 +163,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         fillColor: '#00ff00',
         map: map,
         radius: radius,
-        strokeColor: '#004de8',
+        strokeColor: lineColor,
         strokeOpacity: 0.62,
         strokeWeight: 2
       });
