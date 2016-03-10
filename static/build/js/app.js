@@ -140,17 +140,17 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       select = $('#unitSelector');
       unitKey = $('option', select).eq(select[0].selectedIndex).val();
       radius = parseFloat(document.getElementById('radiusInput').value);
-      if(radius <= 30){
-      		lineColor = '#00FF00'
+      if(radius <= 120){
+      		lineColor = '#FF0000'
       }
-       if(radius <= 60){
-      		lineColor = '#FFFF00'
-      }
-       if(radius <= 90){
+      if(radius <= 90){
       		lineColor = '#FFA500'
       }
-       if(radius <= 120){
-      		lineColor = '#FF0000'
+      if(radius <= 60){
+      		lineColor = '#FFFF00'
+      }
+      if(radius <= 30){
+      		lineColor = '#00FF00'
       }
       radius = (radius / earthRadii[unitKey]) * earthRadii['mt'];
       
