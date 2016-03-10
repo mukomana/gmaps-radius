@@ -211,7 +211,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         });
       }
       if (query.z != null) {
-        z = parseInt(query.z, 10);
+        z = parseInt(query.z, 2);
         if (!isNaN(z)) {
           map.setZoom(z);
         }
