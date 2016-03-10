@@ -70,7 +70,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     circles = [];
     
     map = new google.maps.Map($('#map')[0], {
-      zoom: 10,
+      zoom: 2,
       center: new google.maps.LatLng(-26.514820023728774,30.00091552734375),
       mapType: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
