@@ -70,7 +70,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     circles = [];
     
     map = new google.maps.Map($('#map')[0], {
-      zoom: 2,
+      zoom: 10,
       center: new google.maps.LatLng(-26.514820023728774,30.00091552734375),
       mapType: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
@@ -211,7 +211,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         });
       }
       if (query.z != null) {
-        z = parseInt(query.z, 2);
+        z = parseInt(query.z, 10);
         if (!isNaN(z)) {
           map.setZoom(z);
         }
