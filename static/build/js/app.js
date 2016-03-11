@@ -144,7 +144,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
       		lineColor = '#FF0000'
       }
       if(radius <= 90){
-      		lineColor = '#FFA500'
+      		lineColor = '#000000'
       }
       if(radius <= 60){
       		lineColor = '#0000FF'
