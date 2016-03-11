@@ -101,7 +101,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
     geodesic: true,
     strokeColor: '#FF0000',
     strokeOpacity: 1.0,
-    strokeWeight: 4
+    strokeWeight: 2
   });
 
   flightPath.setMap(map);
@@ -165,7 +165,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         radius: radius,
         strokeColor: lineColor,
         strokeOpacity: 0.62,
-        strokeWeight: 2
+        strokeWeight: 4
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
       return google.maps.event.addListener(circle, 'click', circleDrawHandler);
