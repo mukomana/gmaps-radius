@@ -165,7 +165,7 @@ l=h.substring(0,l.length)!==l?g(""):new g(h.substring(l.length)),l._parentURI=th
         radius: radius,
         strokeColor: lineColor,
         strokeOpacity: 0.62,
-        strokeWeight: 10
+        strokeWeight: 6
       });
       google.maps.event.addListener(circle, 'rightclick', polygonDestructionHandler);
       return google.maps.event.addListener(circle, 'click', circleDrawHandler);
